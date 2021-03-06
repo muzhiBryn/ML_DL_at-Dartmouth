@@ -1,0 +1,17 @@
+Modifications I made:
+1. Most importantly for this assignment: passing class weight in to the loss function.
+2. adding more conv layers
+3. adding max pooling
+4. adding more skip layers and fusing
+5. enlarging the number of filters
+6. data augmenting (flipping, cropping, erasing, color jittering..)
+7. use Adam
+
+Why I think these modifications helped improve the performance of your model:
+1. Since the test evaluates the class accuracy, and the data is not balanced among all classes, it is important to design loss based on the weigth of each class.
+2. larger reception field and more non-linear processing
+3. larger reception filed and strengthen confidence from neigbouring areas
+4. getting more detailed info from early layers
+5. more ability to learn things in the data
+6. providing more data / avoiding overfitting
+7. faster converging with better learning rate controlling
